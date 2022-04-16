@@ -1,4 +1,4 @@
-module nexterp-api
+module github.com/chasingfortune/nexterp-api
 
 go 1.16
 
