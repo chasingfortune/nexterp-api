@@ -1,0 +1,11 @@
+syntax = "proto3";
+package tutorial;
+option go_package = "nexterp/items";
+
+message Item {
+    string name = 1;
+}
+
+message GetItemRequest {
+    int64 id = 1;
+}

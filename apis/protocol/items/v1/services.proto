@@ -1,0 +1,16 @@
+syntax = "proto3";
+package tutorial;
+option go_package = "nexterp/items";
+
+import "item.proto";
+import "google/api/annotations.proto";
+
+service ItemService {
+
+    rpc GetItem(GetItemRequest) returns (Item) {
+        option (google.api.http) = {
+            get: "/v1/itemserser/items/{id}",
+        };
+    }
+
+}
