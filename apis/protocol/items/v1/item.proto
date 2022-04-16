@@ -1,6 +1,6 @@
 syntax = "proto3";
 package tutorial;
-option go_package = "nexterp/items";
+option go_package = "github.com/chasingfortune/nexterp-api/items";
 
 message Item {
     string name = 1;

@@ -41,6 +41,7 @@ do_build() {
         -I"$src_root/dependency" \
         -I"$src_root/dependency/include" \
         --go_out="$dest" --go_opt=paths=source_relative \
+        --go-grpc_out="$dest" --go-grpc_opt=paths=source_relative \
         --grpc-gateway_out=logtostderr=true,paths=source_relative:"$dest"  \
         --validate_out=lang=go,paths=source_relative:"$dest" \
         --openapiv2_out "$doc_dest" \
